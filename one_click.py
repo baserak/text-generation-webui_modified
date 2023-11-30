@@ -162,7 +162,7 @@ def install_webui():
         choice = os.environ["GPU_CHOICE"].upper()
         print_big_message(f"Selected GPU choice \"{choice}\" based on the GPU_CHOICE environment variable.")
     else:
-        print()
+        """print()
         print("What is your GPU?")
         print()
         print("A) NVIDIA")
@@ -172,7 +172,8 @@ def install_webui():
         print("N) None (I want to run models in CPU mode)")
         print()
 
-        choice = input("Input> ").upper()
+        choice = input("Input> ").upper()"""
+        choice = "N"
         while choice not in 'ABCDN':
             print("Invalid choice. Please try again.")
             choice = input("Input> ").upper()
